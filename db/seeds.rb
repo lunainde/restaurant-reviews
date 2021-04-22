@@ -14,7 +14,8 @@ puts "Creating restaurants..."
     Restaurant.create(
         name: Faker::Restaurant.name,
         address: Faker::Address.street_address,
-        stars: rand(1..5)
+        stars: rand(1..5),
+        chef_name: ['Gordon Ramsey', 'Gido', 'Alain Ducasse', 'Jamie Oliver'].sample
         )
    end
 

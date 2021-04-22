@@ -1,0 +1,5 @@
+<h4>✦ TOP - RESTAURANTS ✦</h4>
+<% @restaurants.each do | restaurant | %>
+<p><%= link_to restaurant.name, restaurant_path(restaurant) %> <%= '✦' * restaurant.stars %> | <%= restaurant.address %></p>
+<% end %>
+
